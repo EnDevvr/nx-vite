@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "title": "Serve executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "configFile": {
+      "type": "string",
+      "description": "Relative path to the location of the config file itself."
+    },
+    "root": {
+      "type": "string",
+      "description": "Relative path to the location of the src directory that contains the index.html."
+    }
+  },
+  "required": ["configFile", "root"]
+}

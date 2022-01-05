@@ -1,6 +1,6 @@
 {
-  "root": "packages/vite",
-  "sourceRoot": "packages/vite/src",
+  "root": "packages/nx-vite",
+  "sourceRoot": "packages/nx-vite/src",
   "projectType": "library",
   "targets": {
     "lint": {
@@ -22,29 +22,29 @@
       "executor": "@nrwl/node:package",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/vite",
-        "tsConfig": "packages/vite/tsconfig.lib.json",
-        "packageJson": "packages/vite/package.json",
-        "main": "packages/vite/src/index.ts",
+        "outputPath": "dist/packages/nx-vite",
+        "tsConfig": "packages/nx-vite/tsconfig.lib.json",
+        "packageJson": "packages/nx-vite/package.json",
+        "main": "packages/nx-vite/src/index.ts",
         "assets": [
-          "packages/vite/*.md",
+          "packages/nx-vite/*.md",
           {
-            "input": "./packages/vite/src",
+            "input": "./packages/nx-vite/src",
             "glob": "**/!(*.ts)",
             "output": "./src"
           },
           {
-            "input": "./packages/vite/src",
+            "input": "./packages/nx-vite/src",
             "glob": "**/*.d.ts",
             "output": "./src"
           },
           {
-            "input": "./packages/vite",
+            "input": "./packages/nx-vite",
             "glob": "generators.json",
             "output": "."
           },
           {
-            "input": "./packages/vite",
+            "input": "./packages/nx-vite",
             "glob": "executors.json",
             "output": "."
           }

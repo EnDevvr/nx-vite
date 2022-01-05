@@ -1,7 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "vite": "packages/vite",
-    "vite-e2e": "e2e/vite-e2e"
+    "nx-vite": "packages/nx-vite",
+    "nx-vite-e2e": "e2e/nx-vite-e2e"
   }
 }

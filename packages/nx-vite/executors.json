@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "executors": {
+    "serve": {
+      "implementation": "./src/executors/serve/serve.impl",
+      "schema": "./src/executors/serve/serve.schema.json",
+      "description": "Runs Vite dev server"
+    },
+    "build": {
+      "implementation": "./src/executors/serve/serve.impl",
+      "schema": ".src/executors/build/build.schema.json",
+      "description": "Runs Vite build"
+    }
+  }
+}
